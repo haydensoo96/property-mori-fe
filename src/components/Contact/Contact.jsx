@@ -23,10 +23,18 @@ const Contact = () => {
                   </div>
                   <div className="flexColStart detail">
                     <span className="primaryText">Chat</span>
-                    <span className="secondaryText">021 123 145 14</span>
+                    <span className="secondaryText">Property Specialist</span>
                   </div>
                 </div>
-                <div className="flexCenter button">Chat now</div>
+                <div
+                  className="flexCenter button"
+                  onClick={() =>
+                    (window.location.href =
+                      "https://wa.me/60164703341?text=Hello,%20I%20would%20like%20to%20know%20more%20about%20the%20project.")
+                  }
+                >
+                  Chat now
+                </div>
               </div>
             </div>
           </div>

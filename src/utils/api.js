@@ -3,19 +3,22 @@ import dayjs from "dayjs";
 import { toast } from "react-toastify";
 
 export const api = axios.create({
-  baseURL: "https://full-stack-real-estate-youtube.vercel.app/api",
+  baseURL: "13.215.189.90",
 });
+
+export const submitForm = async (body) => {
+  try {
+    const response = await api.post(`/form/submit`, body);
+    return response.data.success;
+  } catch (error) {
+    toast.error("Something went wrong, Please try again");
+    throw error;
+  }
+};
 
 export const getAllProperties = async () => {
   try {
-    const response = await api.get("/residency/allresd", {
-      timeout: 10 * 1000,
-    });
-
-    if (response.status === 400 || response.status === 500) {
-      throw response.data;
-    }
-    return response.data;
+    return [];
   } catch (error) {
     toast.error("Something went wrong");
     throw error;
@@ -114,11 +117,9 @@ export const toFav = async (id, email, token) => {
   }
 };
 
-
 export const getAllFav = async (email, token) => {
-  if(!token) return 
-  try{
-
+  if (!token) return;
+  try {
     const res = await api.post(
       `/user/allFav`,
       {
@@ -130,20 +131,16 @@ export const getAllFav = async (email, token) => {
         },
       }
     );
-      
-    return res.data["favResidenciesID"]
 
-  }catch(e)
-  {
+    return res.data["favResidenciesID"];
+  } catch (e) {
     toast.error("Something went wrong while fetching favs");
-    throw e
+    throw e;
   }
-} 
-
+};
 
 export const getAllBookings = async (email, token) => {
-  
-  if(!token) return 
+  if (!token) return;
   try {
     const res = await api.post(
       `/user/allBookings`,
@@ -157,31 +154,27 @@ export const getAllBookings = async (email, token) => {
       }
     );
     return res.data["bookedVisits"];
-
-    
   } catch (error) {
     toast.error("Something went wrong while fetching bookings");
-    throw error
+    throw error;
   }
-}
-
+};
 
 export const createResidency = async (data, token) => {
-  console.log(data)
-  try{
+  console.log(data);
+  try {
     const res = await api.post(
       `/residency/create`,
       {
-        data
+        data,
       },
       {
         headers: {
           Authorization: `Bearer ${token}`,
         },
       }
-    )
-  }catch(error)
-  {
-    throw error
+    );
+  } catch (error) {
+    throw error;
   }
-}
+};

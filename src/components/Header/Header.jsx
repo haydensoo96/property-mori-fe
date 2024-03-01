@@ -13,16 +13,7 @@ import useAuthCheck from "../../hooks/useAuthCheck.jsx";
 const Header = () => {
   const [menuOpened, setMenuOpened] = useState(false);
   const headerColor = useHeaderColor();
-  const [modalOpened, setModalOpened] = useState(false);
-  const { loginWithRedirect, isAuthenticated, user, logout } = useAuth0();
-  const { validateLogin } = useAuthCheck();
 
-
-  const handleAddPropertyClick = () => {
-    if (validateLogin()) {
-      setModalOpened(true);
-    }
-  };
   return (
     <section className="h-wrapper" style={{ background: headerColor }}>
       <div className="flexCenter innerWidth paddings h-container">
@@ -46,13 +37,15 @@ const Header = () => {
 
             <a href="mailto:zainkeepscode@gmail.com">Register</a>
 
-            {!isAuthenticated ? (
-              <button className="button" onClick={loginWithRedirect}>
-                Download e-Bouchre
-              </button>
-            ) : (
-              <ProfileMenu user={user} logout={logout} />
-            )}
+            <button
+              className="button"
+              onClick={() =>
+                (window.location.href =
+                  "https://wa.me/60164703341?text=Hello,%20I%20would%20like%20to%20know%20more%20about%20the%20project.")
+              }
+            >
+              Download e-Bouchre
+            </button>
           </div>
         </OutsideClickHandler>
 
