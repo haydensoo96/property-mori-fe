@@ -36,7 +36,7 @@ const Contact = () => {
                   Chat now
                 </div>
               </div>
-              <div className="flexColCenter mode">
+              <div className="flexColCenter mode" style={{ padding: "18px" }}>
                 <span>Showroom Schedule</span>
                 <span className="secondaryText">
                   Monday to Friday - 10AM-6PM

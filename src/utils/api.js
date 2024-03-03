@@ -13,7 +13,7 @@ export const submitForm = async (body) => {
       toast.success("Form Submitted");
     }
 
-    return response.data.success;
+    return response.data;
   } catch (error) {
     toast.error("Something went wrong, Please try again");
     throw error;

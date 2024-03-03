@@ -22,14 +22,9 @@ const RegisterForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Perform any actions with the form data (e.g., submit to a server)
-    console.log("Form submitted:", formData);
-
-    const response = userSubmitForm(formData);
-
-    if (response) {
-      setFormSubmitStatus(true);
-    }
+    userSubmitForm(formData);
+    setFormSubmitStatus(true);
+    return;
   };
 
   return (
@@ -50,6 +45,7 @@ const RegisterForm = () => {
                 style={{ marginBottom: "5%" }}
               >
                 <input
+                  required
                   style={{ width: "100%" }}
                   name="name"
                   type="text"
@@ -64,6 +60,7 @@ const RegisterForm = () => {
                 style={{ marginBottom: "5%" }}
               >
                 <input
+                  required
                   style={{ width: "100%" }}
                   name="phone"
                   type="text"
@@ -92,7 +89,16 @@ const RegisterForm = () => {
             </form>
           </div>
         ) : (
-          <div />
+          <div className="flexColCenter inner-container">
+            <span className="primaryText">Thanks for showing you interest</span>
+            <span className="secondaryText">
+              Our Sales Specialist will get in touch with you as soon as
+              possible
+              <br />
+              Or you can proceed to book a time with us on the Whatsapps Provide
+              above.
+            </span>
+          </div>
         )}
       </div>
     </div>
