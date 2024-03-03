@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./RegisterForm.css";
 import userSubmitForm from "../../hooks/useForm.jsx";
+import { BsFillExclamationCircleFill } from "react-icons/bs";
 
 const RegisterForm = () => {
   const [formData, setFormData] = useState({
@@ -11,20 +12,38 @@ const RegisterForm = () => {
   });
 
   const [formSubmitted, setFormSubmitStatus] = useState(false);
+  const [isValidPhoneNumber, setIsValidPhoneNumber] = useState(true);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
+
     setFormData({
       ...formData,
       [name]: value,
     });
   };
 
+  const validatePhoneNumber = (number) => {
+    // Regex pattern for a valid Malaysia mobile phone number
+    const phoneNumberRegex = /^01[0-9]-*\d{7,8}$/;
+
+    const isValid = phoneNumberRegex.test(number);
+    setIsValidPhoneNumber(isValid);
+    return isValid;
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    userSubmitForm(formData);
-    setFormSubmitStatus(true);
-    return;
+
+    const isValidPhone = validatePhoneNumber(formData.phone);
+
+    if (isValidPhone) {
+      userSubmitForm(formData);
+      setFormSubmitStatus(true);
+      return;
+    } else {
+      return;
+    }
   };
 
   return (
@@ -55,6 +74,17 @@ const RegisterForm = () => {
               </div>
 
               <label className="flexStart secondaryText">Phone</label>
+              {!isValidPhoneNumber && (
+                <p
+                  className="secondaryText"
+                  style={{
+                    color: "#18364a",
+                    textAlign: "left",
+                  }}
+                >
+                  Please enter a valid number.
+                </p>
+              )}
               <div
                 className="flexCenter search-bar"
                 style={{ marginBottom: "5%" }}
@@ -77,7 +107,7 @@ const RegisterForm = () => {
                 <input
                   style={{ width: "100%" }}
                   name="email"
-                  type="text"
+                  type="email"
                   value={formData.email}
                   onChange={(e) => handleChange(e)}
                 />
