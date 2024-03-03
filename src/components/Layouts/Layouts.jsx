@@ -2,51 +2,52 @@ import React from "react";
 import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
-import "./Residencies.css";
+import "./Layouts.css";
 import { sliderSettings } from "../../utils/common";
 import PropertyCard from "../PropertyCard/PropertyCard";
 import useProperties from "../../hooks/useProperties";
-import {PuffLoader} from 'react-spinners'
+import { PuffLoader } from "react-spinners";
 
-const Residencies = () => {
+const Layouts = () => {
+  const { isLoading } = useProperties();
 
-  const {data, isError, isLoading} = useProperties()
+  const sampleData = [
+    { image: "../assets/2.png", description: "A1" },
+    { image: "../assets/3.png", description: "A2" },
+    { image: "../assets/4.png", description: "B1" },
+    { image: "../assets/5.png", description: "B2" },
+    { image: "../assets/6.png", description: "C1" },
+  ];
 
-  if(isError){
-    return(
-      <div className='wrapper'>
-        <span>Error while fetching data</span>
-      </div>
-    )
-  }
-
-  if(isLoading){
-    return(
-      <div className="wrapper flexCenter" style={{height: "60vh"}}>
+  if (isLoading) {
+    return (
+      <div className="wrapper flexCenter" style={{ height: "60vh" }}>
         <PuffLoader
-        height="80"
-        width="80"
-        radius={1}
-        color="#4066ff"
-        aria-label="puff-loading"
+          height="80"
+          width="80"
+          radius={1}
+          color="#4066ff"
+          aria-label="puff-loading"
         />
       </div>
-    )
+    );
   }
 
-
   return (
-    <div id="residencies" className="r-wrapper">
+    <div
+      id="residencies"
+      className="r-wrapper"
+      style={{ alignContent: "center" }}
+    >
       <div className="paddings innerWidth r-container">
         <div className="flexColStart r-head">
           <span className="primaryText">Our Layout</span>
         </div>
         <Swiper {...sliderSettings}>
           <SlideNextButton />
-          {/* slider */}
-          {data.slice(0, 8).map((card, i) => (
+          {sampleData.slice(0, 8).map((card, i) => (
             <SwiperSlide key={i}>
-              <PropertyCard card={card}/>
+              <PropertyCard card={card} />
             </SwiperSlide>
           ))}
         </Swiper>
@@ -55,7 +56,7 @@ const Residencies = () => {
   );
 };
 
-export default Residencies;
+export default Layouts;
 
 const SlideNextButton = () => {
   const swiper = useSwiper();

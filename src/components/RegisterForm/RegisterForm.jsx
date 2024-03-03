@@ -50,6 +50,7 @@ const RegisterForm = () => {
                 style={{ marginBottom: "5%" }}
               >
                 <input
+                  style={{ width: "100%" }}
                   name="name"
                   type="text"
                   value={formData.name}
@@ -63,6 +64,7 @@ const RegisterForm = () => {
                 style={{ marginBottom: "5%" }}
               >
                 <input
+                  style={{ width: "100%" }}
                   name="phone"
                   type="text"
                   value={formData.phone}
@@ -76,6 +78,7 @@ const RegisterForm = () => {
                 style={{ marginBottom: "5%" }}
               >
                 <input
+                  style={{ width: "100%" }}
                   name="email"
                   type="text"
                   value={formData.email}

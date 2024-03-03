@@ -1,7 +1,7 @@
 import React from "react";
 import Contact from "../components/Contact/Contact";
 import Hero from "../components/Hero/Hero";
-import Residencies from "../components/Residencies/Residencies";
+import Layouts from "../components/Layouts/Layouts";
 import RegisterForm from "../components/RegisterForm/RegisterForm";
 
 const Website = () => {
@@ -12,7 +12,7 @@ const Website = () => {
         <Hero />
       </div>
       {/* <Companies /> */}
-      <Residencies />
+      <Layouts />
       {/* <Value/> */}
       <Contact />
       <RegisterForm />

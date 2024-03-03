@@ -8,7 +8,7 @@ const Contact = () => {
         {/* left side */}
         <div className="flexColStart c-left">
           <span className="orangeText">Our Contact Us</span>
-          <span className="primaryText">Easy to contact us</span>
+          <span className="primaryText">Book a time to our showroom</span>
           <span className="secondaryText">
             Contact us and our agent with get in touch with you for more details{" "}
           </span>
@@ -35,6 +35,15 @@ const Contact = () => {
                 >
                   Chat now
                 </div>
+              </div>
+              <div className="flexColCenter mode">
+                <span>Showroom Schedule</span>
+                <span className="secondaryText">
+                  Monday to Friday - 10AM-6PM
+                </span>
+                <span className="secondaryText">
+                  Weekend/Holiday - 10AM-4PM
+                </span>
               </div>
             </div>
           </div>
