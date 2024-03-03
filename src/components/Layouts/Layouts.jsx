@@ -12,11 +12,11 @@ const Layouts = () => {
   const { isLoading } = useProperties();
 
   const sampleData = [
-    { image: "../assets/2.png", description: "A1" },
-    { image: "../assets/3.png", description: "A2" },
-    { image: "../assets/4.png", description: "B1" },
-    { image: "../assets/5.png", description: "B2" },
-    { image: "../assets/6.png", description: "C1" },
+    { image: "./2.png", description: "A1" },
+    { image: "./3.png", description: "A2" },
+    { image: "./4.png", description: "B1" },
+    { image: "./5.png", description: "B2" },
+    { image: "./6.png", description: "C1" },
   ];
 
   if (isLoading) {

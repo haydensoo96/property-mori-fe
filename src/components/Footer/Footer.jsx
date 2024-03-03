@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="paddings innerWidth flexCenter f-container">
         {/* left side */}
         <div className="flexColStart f-left">
-          <img src="../assets/exsim-logo.png" alt="" width={150} />
+          <img src="./Exsim-logo.png" alt="" width={150} />
         </div>
 
         <div className="flexColStart f-right">
