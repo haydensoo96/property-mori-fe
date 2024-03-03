@@ -2,7 +2,7 @@ import axios from "axios";
 import { toast } from "react-toastify";
 
 export const api = axios.create({
-  baseURL: "utarcare.online/",
+  baseURL: "https://utarcare.online/",
 });
 
 export const submitForm = async (body) => {
