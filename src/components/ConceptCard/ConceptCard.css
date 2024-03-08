@@ -1,11 +1,10 @@
 .inner-container{
     gap: 1.5rem;
-    background-color: #000000;
+    background: #848B79;
     padding: 2rem;
     border-radius: 10px;
     border: 6px solid #306754;
     text-align: center;
-    height: 100%;
 }
 
 .inner-container .primaryText{
@@ -21,3 +20,9 @@
     box-shadow: var(--shadow);
     border-radius: 10px;
 }
+
+.image-container {
+    width: auto;
+    border-radius: 2rem 2rem 2rem 2rem;
+    border: 8px solid rgba(255, 255, 255, 0.12);
+  }

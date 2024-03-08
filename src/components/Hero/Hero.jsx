@@ -4,37 +4,48 @@ const Hero = () => {
   return (
     <section className="hero-wrapper">
       <div className="paddings innerWidth flexCenter hero-container">
-        <div className="flexColStart hero-left">
-          <div className="hero-title">
-            <motion.h1
-              initial={{ y: "2rem", opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              transition={{
-                duration: 2,
-                type: "ease-in",
+        <div>
+          <div className="innerWidth flexCenter c-container">
+            <div
+              className="flexCenter c-left "
+              style={{
+                flex: 1.5,
+                textAlign: "center",
+                flexDirection: "column",
               }}
             >
-              D'ivo Residence
-            </motion.h1>
-          </div>
-          <div className="flexColStart secondaryText flexhero-des">
-            <span>By EXSIM @OLD KLANG ROAD</span>
-          </div>
-        </div>
+              <span
+                className="primaryText"
+                style={{
+                  color: "#9d9d9d",
+                  fontFamily: "fantasy",
+                  fontSize: "35px",
+                }}
+              >
+                North Woods Residence
+              </span>
 
-        {/* right side */}
-        <div className="flexCenter hero-right">
-          <motion.div
-            initial={{ x: "7rem", opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-            transition={{
-              duration: 2,
-              type: "ease-in",
-            }}
-            className="image-container"
-          >
-            <img src="./Facade.jpeg" alt="houses" />
-          </motion.div>
+              <span className="secondaryText">By Gamuda Cove</span>
+            </div>
+            <div className="flexStart" style={{ flex: 1, padding: "5px" }}>
+              <motion.h1
+                initial={{ y: "2rem", opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{
+                  duration: 2,
+                  type: "ease-in",
+                }}
+              >
+                <div className="image-container">
+                  <img
+                    src="./northwoods_assets/Splashmania.png"
+                    alt=""
+                    style={{ width: "100%" }}
+                  />
+                </div>
+              </motion.h1>
+            </div>
+          </div>
         </div>
       </div>
     </section>

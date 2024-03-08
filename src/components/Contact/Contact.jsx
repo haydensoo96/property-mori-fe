@@ -29,8 +29,7 @@ const Contact = () => {
                 <div
                   className="flexCenter button"
                   onClick={() =>
-                    (window.location.href =
-                      "https://wa.me/60164703341?text=Hello,%20I%20would%20like%20to%20know%20more%20about%20the%20project.")
+                    (window.location.href = "https://wa.link/npzy6t")
                   }
                 >
                   Chat now
@@ -52,7 +51,7 @@ const Contact = () => {
         {/* right side */}
         <div className="flexEnd c-right">
           <div className="image-container">
-            <img src="./contact.jpg" alt="" />
+            <img src="./northwoods_assets/img1-thumb.png" alt="" />
           </div>
         </div>
       </div>

@@ -37,11 +37,17 @@ const Layouts = () => {
     <div
       id="residencies"
       className="r-wrapper"
-      style={{ alignContent: "center" }}
+      style={{
+        alignContent: "center",
+        backgroundColor: "var(--black)",
+      }}
     >
+      <div className="white-gradient-bottom-right" />
       <div className="paddings innerWidth r-container">
         <div className="flexColStart r-head">
-          <span className="primaryText">Our Layout</span>
+          <span className="primaryText" style={{ color: "white" }}>
+            Our Layout
+          </span>
         </div>
         <Swiper {...sliderSettings}>
           <SlideNextButton />

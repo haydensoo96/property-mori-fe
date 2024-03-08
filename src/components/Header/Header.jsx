@@ -19,7 +19,11 @@ const Header = () => {
       <div className="flexCenter innerWidth paddings h-container">
         {/* logo */}
         <Link to="/">
-          <img src="./Exsim-logo.png" alt="logo" width={150} />
+          <img
+            src="./northwoods_assets/footer-logo.png"
+            alt="logo"
+            width={150}
+          />
         </Link>
 
         {/* menu */}
@@ -33,16 +37,13 @@ const Header = () => {
             className="flexCenter h-menu"
             style={getMenuStyles(menuOpened)}
           >
-            <NavLink to="/properties">Layout</NavLink>
+            <NavLink to="#layout">Layout</NavLink>
 
-            <a href="mailto:zainkeepscode@gmail.com">Register</a>
+            <a href="#RegisterForm">Register</a>
 
             <button
               className="button"
-              onClick={() =>
-                (window.location.href =
-                  "https://wa.me/60164703341?text=Hello,%20I%20would%20like%20to%20know%20more%20about%20the%20project.")
-              }
+              onClick={() => (window.location.href = "https://wa.link/npzy6t")}
             >
               Download e-Bouchre
             </button>

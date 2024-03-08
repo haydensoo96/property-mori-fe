@@ -1,10 +1,10 @@
 :root {
-  --primary: #1f3e72;
+  --primary: #043f00;
   --secondary: rgba(255, 255, 255, 0.78);
-  --black: #18364a;
+  --black: #184f45;
   --blue-gradient: linear-gradient(97.05deg, #4066ff 3.76%, #2949c6 100%);
   --orange-gradient: linear-gradient(270deg, #ffb978 0%, #ff922d 100%);
-  --blue: #4066ff;
+  --blue: #4E8975;
   --lightBlue: #eeeeff;
   --shadow: 0px 23px 21px -8px rgba(136, 160, 255, 0.25);
 }
@@ -13,9 +13,13 @@
   margin: 0;
   padding: 0; 
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: "Abel", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   scroll-behavior: smooth;
 }
+
+
 .wrapper{
   background-color: white;
 }
@@ -70,7 +74,7 @@ a {
 }
 
 .primaryText {
-  color: #1f3e72;
+  color: #007C80;
   font-weight: bold;
   font-size: 2rem;
 }
@@ -80,7 +84,7 @@ a {
   font-size: 0.9rem;
 }
 .orangeText {
-  color: orange;
+  color: #3B9C9C;
   font-size: 1.5rem;
   font-weight: 600;
 }

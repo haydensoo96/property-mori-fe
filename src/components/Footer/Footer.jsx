@@ -2,22 +2,15 @@ import React from "react";
 import "./Footer.css";
 const Footer = () => {
   return (
-    <div className="f-wrapper">
+    <div className="f-wrapper" style={{ backgroundColor: "var(--black)" }}>
       <div className="paddings innerWidth flexCenter f-container">
         {/* left side */}
         <div className="flexColStart f-left">
-          <img src="./Exsim-logo.png" alt="" width={150} />
+          <img src="./northwoods_assets/footer-logo.png" alt="" width={150} />
         </div>
 
         <div className="flexColStart f-right">
-          <span className="primaryText">Information</span>
-          <span className="secondaryText">+601742222222</span>
-          <div className="flexCenter f-menu">
-            <span>Property</span>
-            <span>Services</span>
-            <span>Product</span>
-            <span>About Us</span>
-          </div>
+          <img src="./northwoods_assets/gamudaland.png" alt="" width={150} />
         </div>
       </div>
     </div>
