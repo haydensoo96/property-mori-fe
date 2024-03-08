@@ -5,6 +5,8 @@ import Layouts from "../components/Layouts/Layouts";
 import RegisterForm from "../components/RegisterForm/RegisterForm";
 import ConceptCard from "../components/ConceptCard/ConceptCard";
 import MapComponent from "../components/MapComponent/MapComponent";
+import ConceptKey from "../components/ConceptCard/ConceptKey";
+import MapComponent2 from "../components/MapComponent/MapComponent2";
 
 const Website = () => {
   return (
@@ -14,10 +16,15 @@ const Website = () => {
         <Hero />
       </div>
       <ConceptCard />
-      <Layouts />
+      <ConceptKey />
       <Contact />
-      <RegisterForm />
+      <Layouts />
       <MapComponent />
+      <div>
+        <div className="white-gradient-bottom-right" />
+        <RegisterForm />
+      </div>
+      <MapComponent2 />
     </div>
   );
 };

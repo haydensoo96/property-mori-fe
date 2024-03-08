@@ -53,21 +53,25 @@ const RegisterForm = () => {
             <img src="./northwoods_assets/discovery-park.png" alt="" />
           </div>
         </div>
-        <div className="flex paddings">
+        <div className="flex">
           {!formSubmitted ? (
             <div className="flexColCenter inner-container">
-              <span className="primaryText">Register You Interest</span>
+              <span className="primaryText" style={{ marginBottom: "3%" }}>
+                Register You Interest
+              </span>
               <span className="secondaryText">
                 Subscribe and find super attractive price quotes from us.
                 <br />
                 Find your residence soon
               </span>
-              <form onSubmit={handleSubmit} style={{ width: "50%" }}>
+              <form
+                onSubmit={handleSubmit}
+                style={{
+                  width: "100%",
+                }}
+              >
                 <label className="flexStart secondaryText">Name</label>
-                <div
-                  className="flexCenter search-bar"
-                  style={{ marginBottom: "5%" }}
-                >
+                <div className=" search-bar" style={{ marginBottom: "5%" }}>
                   <input
                     required
                     style={{ width: "100%" }}
@@ -118,7 +122,11 @@ const RegisterForm = () => {
                   />
                 </div>
 
-                <button className="button" type="submit">
+                <button
+                  className="button"
+                  type="submit"
+                  style={{ marginTop: "13%", width: "30%", fontSize: "15px" }}
+                >
                   Submit
                 </button>
               </form>

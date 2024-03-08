@@ -1,6 +1,6 @@
 import React from "react";
 import "./MapComponent.css";
-const MapComponent = () => {
+const MapComponent2 = () => {
   return (
     <div style={{ flex: 1, paddingLeft: "10%", paddingRight: "10%" }}>
       <div className="flexColCenter" style={{ flex: 0.5 }}>
@@ -8,7 +8,7 @@ const MapComponent = () => {
           className="primaryText paddings"
           style={{ fontFamily: "fantasy", fontSize: "25px" }}
         >
-          WE DISCOVER
+          OUR MASTER PLAN
         </span>
         <span className="secondaryText" style={{ textAlign: "center" }}>
           Gamuda Cove is a 1,530-acre township set next to wetlands and forest
@@ -25,10 +25,10 @@ const MapComponent = () => {
           height: "100%",
         }}
       >
-        <img src="./northwoods_assets/township_map.png" alt="" />
+        <img src="./northwoods_assets/masterplan.png" alt="" />
       </div>
     </div>
   );
 };
 
-export default MapComponent;
+export default MapComponent2;

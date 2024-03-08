@@ -28,7 +28,10 @@ const ConceptCard = () => {
           className="flexCenter c-left "
           style={{ flex: 1, textAlign: "center" }}
         >
-          <span className="orangeText" style={{ padding: "1%" }}>
+          <span
+            className="orangeText"
+            style={{ padding: "1%", fontFamily: "fantasy", fontSize: "30px" }}
+          >
             Spashmania
           </span>
           <span className="primaryText">
