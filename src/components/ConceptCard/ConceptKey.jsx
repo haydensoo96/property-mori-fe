@@ -4,10 +4,7 @@ import { motion } from "framer-motion";
 
 const ConceptKey = () => {
   return (
-    <div
-      style={{ backgroundColor: "var(--black)" }}
-      className="paddings white-gradient"
-    >
+    <div style={{ backgroundColor: "var(--black)" }} className="paddings">
       <div className="innerWidth flexCenter c-container">
         <div className="flexStart" style={{ flex: 1, padding: "10px" }}>
           <motion.h1
