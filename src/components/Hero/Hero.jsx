@@ -2,7 +2,10 @@ import "./Hero.css";
 import { motion } from "framer-motion";
 const Hero = () => {
   return (
-    <section className="hero-wrapper">
+    <section
+      className="hero-wrapper"
+      style={{ background: "linear-gradient(to bottom, transparent, white)" }}
+    >
       <div className="paddings innerWidth flexCenter hero-container">
         <div>
           <div className="innerWidth flexCenter c-container">
@@ -17,7 +20,7 @@ const Hero = () => {
               <span
                 className="primaryText"
                 style={{
-                  color: "#9d9d9d",
+                  color: "var(--black)",
                   fontFamily: "fantasy",
                   fontSize: "35px",
                 }}
@@ -25,7 +28,9 @@ const Hero = () => {
                 North Woods Residence
               </span>
 
-              <span className="secondaryText">By Gamuda Cove</span>
+              <span className="secondaryText" style={{ color: "var(--blue)" }}>
+                By Gamuda Cove
+              </span>
             </div>
             <div className="flexStart" style={{ flex: 1, padding: "5px" }}>
               <motion.h1

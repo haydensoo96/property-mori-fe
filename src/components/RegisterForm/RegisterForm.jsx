@@ -55,7 +55,10 @@ const RegisterForm = () => {
         </div>
         <div className="flex">
           {!formSubmitted ? (
-            <div className="flexColCenter inner-container">
+            <div
+              className="flexColCenter inner-container"
+              style={{ backgroundColor: "var(--blue)" }}
+            >
               <span className="primaryText" style={{ marginBottom: "3%" }}>
                 Register You Interest
               </span>
