@@ -12,10 +12,10 @@ const Layouts = () => {
   const { isLoading } = useProperties();
 
   const sampleData = [
-    { image: "./northwoods_assets/Layout_1.PNG", description: "A1" },
-    { image: "./northwoods_assets/Layout_2.PNG", description: "A2" },
-    { image: "./northwoods_assets/Layout_3.PNG", description: "B1" },
-    { image: "./northwoods_assets/Layout_4.PNG", description: "B2" },
+    { image: "./northwoods_assets/Layout_1.PNG", description: "A" },
+    { image: "./northwoods_assets/Layout_2.PNG", description: "B" },
+    { image: "./northwoods_assets/Layout_3.PNG", description: "C" },
+    { image: "./northwoods_assets/Layout_4.PNG", description: "D" },
   ];
 
   if (isLoading) {
@@ -42,7 +42,7 @@ const Layouts = () => {
       }}
     >
       <div className="white-gradient-bottom-right" />
-      <div className="paddings innerWidth r-container">
+      <div className="paddings r-container">
         <div className="flexColStart r-head">
           <span className="primaryText" style={{ color: "white" }}>
             Our Layout

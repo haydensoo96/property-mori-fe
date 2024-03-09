@@ -43,7 +43,7 @@ const Hero = () => {
               >
                 <div className="image-container">
                   <img
-                    src="./northwoods_assets/Splashmania.png"
+                    src="./northwoods_assets/Land_title.PNG"
                     alt=""
                     style={{ width: "100%" }}
                   />

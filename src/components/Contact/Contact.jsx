@@ -29,7 +29,7 @@ const Contact = () => {
                 <div
                   className="flexCenter button"
                   onClick={() =>
-                    (window.location.href = "https://wa.link/npzy6t")
+                    (window.location.href = "https://wa.link/baf09c")
                   }
                 >
                   Chat now
@@ -41,7 +41,7 @@ const Contact = () => {
                   Monday to Friday - 10AM-6PM
                 </span>
                 <span className="secondaryText">
-                  Weekend/Holiday - 10AM-4PM
+                  Weekend/Holiday - 10AM-6PM
                 </span>
               </div>
             </div>
