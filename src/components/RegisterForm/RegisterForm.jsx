@@ -34,15 +34,15 @@ const RegisterForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const isValidPhone = validatePhoneNumber(formData.phone);
+    // const isValidPhone = validatePhoneNumber(formData.phone);
 
-    if (isValidPhone) {
-      userSubmitForm(formData);
-      setFormSubmitStatus(true);
-      return;
-    } else {
-      return;
-    }
+    // if (isValidPhone) {
+    userSubmitForm(formData);
+    setFormSubmitStatus(true);
+    return;
+    // } else {
+    //   return;
+    // }
   };
 
   return (
@@ -103,6 +103,7 @@ const RegisterForm = () => {
                 >
                   <input
                     required
+                    placeholder="eg. 0163334444"
                     style={{ width: "100%" }}
                     name="phone"
                     type="text"
