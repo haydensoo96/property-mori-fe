@@ -53,15 +53,13 @@ const RegisterForm = () => {
             <img src="./northwoods_assets/discovery-park.png" alt="" />
           </div>
         </div>
-        <div className="flex">
+        <div className="flex paddings">
           {!formSubmitted ? (
             <div
               className="flexColCenter inner-container"
               style={{ backgroundColor: "var(--blue)" }}
             >
-              <span className="primaryText" style={{ marginBottom: "3%" }}>
-                Register You Interest
-              </span>
+              <span className="primaryText">Register You Interest</span>
               <span className="secondaryText">
                 Subscribe and find super attractive price quotes from us.
                 <br />
@@ -129,7 +127,7 @@ const RegisterForm = () => {
                 <button
                   className="button"
                   type="submit"
-                  style={{ marginTop: "13%", width: "30%", fontSize: "15px" }}
+                  style={{ marginTop: "5%", width: "30%", fontSize: "15px" }}
                 >
                   Submit
                 </button>
