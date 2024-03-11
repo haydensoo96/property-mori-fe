@@ -16,10 +16,9 @@ const Website = () => {
         <Hero />
       </div>
       <ConceptCard />
-      {/* <div>
-        <div className="white-gradient" />
-        <ConceptKey />
-      </div> */}
+
+      <ConceptKey />
+
       <div>
         <div className="white-gradient" />
         <Contact />

@@ -4,9 +4,9 @@ import { motion } from "framer-motion";
 
 const ConceptKey = () => {
   return (
-    <div style={{ backgroundColor: "var(--black)" }} className="paddings">
-      <div className="innerWidth flexCenter c-container">
-        <div className="flexStart" style={{ flex: 1, padding: "10px" }}>
+    <div style={{ backgroundColor: "var(--black)" }}>
+      <div className="innerWidth flexCenter paddings">
+        <div>
           <motion.h1
             initial={{ y: "2rem", opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
@@ -15,13 +15,11 @@ const ConceptKey = () => {
               type: "ease-in",
             }}
           >
-            <div className="image-container">
-              <img
-                src="./northwoods_assets/KeySetup.jpeg"
-                alt=""
-                style={{ width: "100%" }}
-              />
-            </div>
+            <img
+              src="./northwoods_assets/KeySetup.jpeg"
+              alt=""
+              className="image-container"
+            />
           </motion.h1>
         </div>
       </div>
