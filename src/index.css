@@ -42,6 +42,13 @@ a {
   align-items: center;
   flex-wrap: wrap;
 }
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+
 .flexStart {
   display: flex;
   justify-content: flex-start;

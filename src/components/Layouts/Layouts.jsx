@@ -12,7 +12,7 @@ const Layouts = () => {
   const { isLoading } = useProperties();
 
   const sampleData = [
-    { image: "./northwoods_assets/Layout_1.PNG", description: "A" },
+    // { image: "./northwoods_assets/Layout_1.PNG", description: "A" },
     { image: "./northwoods_assets/Layout_2.PNG", description: "B" },
     { image: "./northwoods_assets/Layout_3.PNG", description: "C" },
     { image: "./northwoods_assets/Layout_4.PNG", description: "D" },
@@ -35,27 +35,27 @@ const Layouts = () => {
   return (
     <div
       id="residencies"
-      className="r-wrapper"
       style={{
-        alignContent: "center",
         backgroundColor: "var(--black)",
       }}
     >
       <div className="white-gradient-bottom-right" />
-      <div className="paddings r-container">
-        <div className="flexColStart r-head">
+      <div className="paddings">
+        <div className="flexCenter r-head">
           <span className="primaryText" style={{ color: "white" }}>
             Our Layout
           </span>
         </div>
-        <Swiper {...sliderSettings}>
-          <SlideNextButton />
-          {sampleData.slice(0, 8).map((card, i) => (
-            <SwiperSlide key={i}>
-              <PropertyCard card={card} />
-            </SwiperSlide>
-          ))}
-        </Swiper>
+        <div>
+          <Swiper {...sliderSettings}>
+            <SlideNextButton />
+            {sampleData.slice(0, 8).map((card, i) => (
+              <SwiperSlide key={i}>
+                <PropertyCard card={card} />
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
       </div>
     </div>
   );
