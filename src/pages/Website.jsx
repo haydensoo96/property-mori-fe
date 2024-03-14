@@ -7,6 +7,7 @@ import ConceptCard from "../components/ConceptCard/ConceptCard";
 import MapComponent from "../components/MapComponent/MapComponent";
 import ConceptKey from "../components/ConceptCard/ConceptKey";
 import MapComponent2 from "../components/MapComponent/MapComponent2";
+import ConceptElement from "../components/ConceptCard/ConceptElement";
 
 const Website = () => {
   return (
@@ -19,6 +20,7 @@ const Website = () => {
 
       <ConceptKey />
 
+      <ConceptElement />
       <div>
         <div className="white-gradient" />
         <Contact />
