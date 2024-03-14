@@ -37,7 +37,7 @@ const Header = () => {
             className="flexCenter h-menu"
             style={getMenuStyles(menuOpened)}
           >
-            <NavLink to="#layout">Layout</NavLink>
+            <NavLink to="#Layouts">Layout</NavLink>
 
             <a href="#RegisterForm">Register</a>
 

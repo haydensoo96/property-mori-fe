@@ -34,7 +34,7 @@ const Layouts = () => {
 
   return (
     <div
-      id="residencies"
+      id="Layouts"
       style={{
         backgroundColor: "var(--black)",
       }}

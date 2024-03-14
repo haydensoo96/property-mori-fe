@@ -46,7 +46,11 @@ const RegisterForm = () => {
   };
 
   return (
-    <div className="c-wrapper" style={{ backgroundColor: "var(--black)" }}>
+    <div
+      className="c-wrapper"
+      style={{ backgroundColor: "var(--black)" }}
+      id="RegisterForm"
+    >
       <div className="flexCenter c-container innerWidth">
         <div className="flexStart paddings">
           <div className="image-container">
