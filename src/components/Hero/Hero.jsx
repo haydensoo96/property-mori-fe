@@ -6,50 +6,47 @@ const Hero = () => {
       className="hero-wrapper"
       style={{ background: "linear-gradient(to bottom, transparent, white)" }}
     >
-      <div className="paddings innerWidth flexCenter hero-container">
-        <div>
-          <div className="innerWidth flexCenter c-container">
-            <div
-              className="flexCenter c-left "
+      <div className="innerWidth paddings flexCenter hero-container">
+        <div className=" flexCenter">
+          <div
+            className="flexCenter c-left"
+            style={{
+              textAlign: "center",
+              flexDirection: "column",
+              position: "absolute",
+              top: "15%",
+            }}
+          >
+            <img
+              src="./northwoods_assets/words-logo.png"
+              alt=""
+              style={{ width: "20%" }}
+            />
+            <span
+              className="primaryText"
               style={{
-                flex: 1.5,
-                textAlign: "center",
-                flexDirection: "column",
+                fontWeight: "100",
+                color: "#2d4e4b",
+                fontSize: "20px",
+                marginTop: "1%",
               }}
             >
-              <span
-                className="primaryText"
-                style={{
-                  color: "var(--black)",
-                  fontFamily: "fantasy",
-                  fontSize: "35px",
-                }}
-              >
-                North Woods Residence
-              </span>
-
-              <span className="secondaryText" style={{ color: "var(--blue)" }}>
-                By Gamuda Cove
-              </span>
-            </div>
-            <div className="flexStart" style={{ flex: 1, padding: "5px" }}>
-              <motion.h1
-                initial={{ y: "2rem", opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{
-                  duration: 2,
-                  type: "ease-in",
-                }}
-              >
-                <div className="image-container">
-                  <img
-                    src="./northwoods_assets/Land_title.PNG"
-                    alt=""
-                    style={{ width: "100%" }}
-                  />
-                </div>
-              </motion.h1>
-            </div>
+              Serviced Residence
+            </span>
+          </div>
+          <div className="flexStart" style={{ flex: 2, padding: "5px" }}>
+            <motion.h1
+              initial={{ y: "2rem", opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{
+                duration: 2,
+                type: "ease-in",
+              }}
+            >
+              <div className="image-container">
+                <img src="./northwoods_assets/gallery7-desktop.png" alt="" />
+              </div>
+            </motion.h1>
           </div>
         </div>
       </div>

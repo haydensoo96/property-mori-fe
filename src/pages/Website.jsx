@@ -8,6 +8,7 @@ import MapComponent from "../components/MapComponent/MapComponent";
 import ConceptKey from "../components/ConceptCard/ConceptKey";
 import MapComponent2 from "../components/MapComponent/MapComponent2";
 import ConceptElement from "../components/ConceptCard/ConceptElement";
+import PhotoSliders from "../components/Layouts/PhotoSlider";
 
 const Website = () => {
   return (
@@ -16,7 +17,7 @@ const Website = () => {
         <div className="white-gradient" />
         <Hero />
       </div>
-      <ConceptCard />
+      <PhotoSliders />
 
       <ConceptKey />
 

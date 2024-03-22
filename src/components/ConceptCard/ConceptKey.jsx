@@ -4,7 +4,11 @@ import { motion } from "framer-motion";
 
 const ConceptKey = () => {
   return (
-    <div style={{ backgroundColor: "var(--black)" }}>
+    <div
+      style={{
+        background: "linear-gradient(to bottom, transparent, var(--black))",
+      }}
+    >
       <div className="innerWidth flexCenter paddings">
         <motion.h1
           initial={{ y: "2rem", opacity: 0 }}
