@@ -13,6 +13,7 @@ import Property from "./pages/Property/Property";
 import UserDetailContext from "./context/UserDetailContext";
 import Bookings from "./pages/Bookings/Bookings";
 import Favourites from "./pages/Favourites/Favourites";
+import { FloatingWhatsApp } from "react-floating-whatsapp";
 
 function App() {
   const queryClient = new QueryClient();
@@ -28,6 +29,9 @@ function App() {
       <QueryClientProvider client={queryClient}>
         <BrowserRouter>
           <Suspense fallback={<div>Loading...</div>}>
+            <FloatingWhatsApp
+              onClick={() => (window.location.href = "https://wa.link/baf09c")}
+            ></FloatingWhatsApp>
             <Routes>
               <Route element={<Layout />}>
                 <Route path="/" element={<Website />} />
