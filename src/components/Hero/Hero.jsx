@@ -15,6 +15,7 @@ const Hero = () => {
               flexDirection: "column",
               position: "absolute",
               top: "15%",
+              left: "2%",
             }}
           >
             <img

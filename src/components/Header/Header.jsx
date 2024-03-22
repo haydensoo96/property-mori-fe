@@ -37,6 +37,13 @@ const Header = () => {
             className="flexCenter h-menu"
             style={getMenuStyles(menuOpened)}
           >
+            <a
+              href="https://vinceskycam.com/360/gamuda_t12_vr/"
+              target="_blank"
+            >
+              Virtual View
+            </a>
+
             <NavLink to="#Layouts">Layout</NavLink>
 
             <a href="#RegisterForm">Register</a>
