@@ -49,10 +49,9 @@ const RegisterForm = () => {
     <div className="c-wrapper" id="RegisterForm" style={{ marginTop: "5%" }}>
       <div className="flexCenter c-container innerWidth">
         <div className="flexStart">
-          <div className="image-container">
+          <div>
             <img src="./heritage_assets/concept2.jpeg" alt="" />
           </div>
-          <div style={{ backgroundColor: "red", flex: 1 }}></div>
         </div>
         <div className="flex c-right">
           {!formSubmitted ? (

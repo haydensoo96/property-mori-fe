@@ -30,7 +30,7 @@ function App() {
         <BrowserRouter>
           <Suspense fallback={<div>Loading...</div>}>
             <FloatingWhatsApp
-              onClick={() => (window.location.href = "https://wa.link/baf09c")}
+              onClick={() => (window.location.href = "https://wa.link/e56jfn")}
             ></FloatingWhatsApp>
             <Routes>
               <Route element={<Layout />}>

@@ -52,8 +52,8 @@ const Header = () => {
 
             <button
               className="button"
-              onClick={() => (window.location.href = "https://wa.link/npzy6t")}
-              style={{ fontSize: "12px" }}
+              onClick={() => (window.location.href = "https://wa.link/e56jfn")}
+              style={{ fontSize: "15px", fontWeight: "300" }}
             >
               Get Quote
             </button>

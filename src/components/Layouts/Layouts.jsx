@@ -17,7 +17,6 @@ const Layouts = () => {
   const { isLoading } = useProperties();
 
   const sampleData = [
-    // { image: "./northwoods_assets/Layout_1.PNG", description: "A" },
     {
       image: "./heritage_assets/TypeA.jpg",
       title: "B",
