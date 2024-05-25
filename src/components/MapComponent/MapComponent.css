@@ -1,9 +1,8 @@
 .inner-container{
     gap: 1.5rem;
-    background: #848B79;
-    padding: 2rem;
-    border-radius: 10px;
-    border: 6px solid #306754;
+    background: var(--secondary);
+    padding:10%;
+    border: 3px solid var(--primary);
     text-align: center;
 }
 
