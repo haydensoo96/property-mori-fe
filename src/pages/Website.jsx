@@ -14,24 +14,22 @@ const Website = () => {
   return (
     <div className="App">
       <div>
-        <div className="white-gradient" />
         <Hero />
       </div>
       <PhotoSliders />
 
       <ConceptKey />
 
-      <ConceptElement />
+      {/* <ConceptElement /> */}
       <div>
         <div className="white-gradient" />
         <Contact />
       </div>
       <Layouts />
       <MapComponent />
-      <div>
-        <div className="white-gradient-bottom-right" />
-        <RegisterForm />
-      </div>
+
+      <RegisterForm />
+
       <MapComponent2 />
     </div>
   );

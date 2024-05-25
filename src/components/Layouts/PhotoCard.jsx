@@ -9,11 +9,8 @@ const PhotoCard = ({ card }) => {
       style={{ alignItems: "center" }}
     >
       <img src={card.image} alt="home" />
-      <span
-        className="secondaryText description"
-        style={{ fontSize: "20px", color: "lightgray" }}
-      >
-        {truncate(card.description, { length: 100 })}
+      <span className="secondaryText">
+        {truncate(card.title, { length: 100 })}
       </span>
     </div>
   );

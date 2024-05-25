@@ -53,6 +53,13 @@
   scale: 0.8;
 }
 
+.inner-image {
+  flex:1;
+  width: 50%;
+  height: 50%;
+
+}
+
 @media (max-width: 1024px) {
   .c-container {
     flex-direction: column;

@@ -1,9 +1,7 @@
 .image-container {
-    border-radius: 2rem 2rem 2rem 2rem;
-    border: 8px solid rgba(255, 255, 255, 0.12);
+    padding: 1%;
   }
 
   .img {
-    border-radius: 2rem 2rem 2rem 2rem;
-    border: 8px solid rgba(255, 255, 255, 0.12);
+    
   }

@@ -1,12 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
 :root {
-  --primary: #043f00;
-  --secondary: rgba(255, 255, 255, 0.78);
-  --black: #184f45;
-  --blue-gradient: linear-gradient(97.05deg, #4066ff 3.76%, #2949c6 100%);
+  --primary: #a4a88d;
+  --secondary: rgba(9, 8, 8, 0.78);
+  --black: #c0b6ae;
+  --blue-gradient: linear-gradient(97.05deg, #98a25a 3.76%, #a1a17e 100%);
   --orange-gradient: linear-gradient(270deg, #ffb978 0%, #ff922d 100%);
-  --blue: #4E8975;
+  --blue: #231F20;
   --lightBlue: #eeeeff;
   --shadow: 0px 23px 21px -8px rgba(136, 160, 255, 0.25);
+  font-family: 'Source Sans 3', sans-serif;
 }
 
 * {
@@ -19,6 +22,19 @@
   scroll-behavior: smooth;
 }
 
+.legend-container {
+  flex-direction: row;
+  display: flex;
+  background-color: white;
+  border: 2px solid rgba(120, 120, 120, 0.374);
+  padding: 0.5rem 1rem;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.legend-item{
+  
+}
 
 .wrapper{
   background-color: white;
@@ -81,25 +97,49 @@ a {
 }
 
 .primaryText {
-  color: #007C80;
+  font-family:"Source Sans 3";
+  color: #231F20;
   font-weight: bold;
   font-size: 2rem;
 }
 
 .secondaryText {
-  color: rgb(140 139 139);
+  font-family:"Source Sans 3";
+  color: rgb(83, 82, 82);
   font-size: 0.9rem;
 }
+
+.textFormat{
+  text-align: left;
+}
+
 .orangeText {
-  color: #3B9C9C;
+  font-family:"Source Sans 3";
+  color: #66615b;
   font-size: 1.5rem;
   font-weight: 600;
+}
+
+.image-row-container {
+  display: flex;        /* Use Flexbox to arrange children in a row */
+  flex-direction: row;  /* Ensure direction is row (horizontal) */
+  justify-content: space-between;
+}
+
+.image-row-container img {
+  flex: 1;                  /* Make images flexible to fill the container */
+  max-width: calc(25% - 5px); /* Adjust the width, subtracting margin for spacing */      /* Add right margin to space images */
+  height: auto;             /* Maintain aspect ratio */
+}
+
+.image-row-container img:last-child {
+  margin-right: 0;
 }
 
 /* media queries */
 @media (min-width: 1536px) {
   .innerWidth {
-    max-width: 1280px;
+    max-width: 1600px;
     margin: auto;
   }
 }

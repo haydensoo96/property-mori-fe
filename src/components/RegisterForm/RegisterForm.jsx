@@ -7,7 +7,7 @@ const RegisterForm = () => {
     name: "",
     phone: "",
     email: "",
-    project: "Northwoods",
+    project: "Heritage",
   });
 
   const [formSubmitted, setFormSubmitStatus] = useState(false);
@@ -46,23 +46,17 @@ const RegisterForm = () => {
   };
 
   return (
-    <div
-      className="c-wrapper"
-      style={{ backgroundColor: "var(--black)" }}
-      id="RegisterForm"
-    >
+    <div className="c-wrapper" id="RegisterForm" style={{ marginTop: "5%" }}>
       <div className="flexCenter c-container innerWidth">
-        <div className="flexStart paddings">
+        <div className="flexStart">
           <div className="image-container">
-            <img src="./northwoods_assets/discovery-park.png" alt="" />
+            <img src="./heritage_assets/concept2.jpeg" alt="" />
           </div>
+          <div style={{ backgroundColor: "red", flex: 1 }}></div>
         </div>
-        <div className="flex paddings">
+        <div className="flex c-right">
           {!formSubmitted ? (
-            <div
-              className="flexColCenter inner-container"
-              style={{ backgroundColor: "var(--blue)" }}
-            >
+            <div className="flexColStart">
               <span className="primaryText">Register You Interest</span>
               <span className="secondaryText">
                 Subscribe and find super attractive price quotes from us.
@@ -72,6 +66,7 @@ const RegisterForm = () => {
               <form
                 onSubmit={handleSubmit}
                 style={{
+                  marginTop: "5%",
                   width: "100%",
                 }}
               >
@@ -105,7 +100,7 @@ const RegisterForm = () => {
                 >
                   <input
                     required
-                    placeholder="eg. 0163334444"
+                    placeholder="eg. 01X XXX XXXX"
                     style={{ width: "100%" }}
                     name="phone"
                     type="text"

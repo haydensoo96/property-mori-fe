@@ -20,7 +20,7 @@ const Header = () => {
         {/* logo */}
         <Link to="/">
           <img
-            src="./northwoods_assets/footer-logo.png"
+            src="./heritage_assets/heritage-logo.png"
             alt="logo"
             width={150}
           />
@@ -37,22 +37,25 @@ const Header = () => {
             className="flexCenter h-menu"
             style={getMenuStyles(menuOpened)}
           >
-            <a
+            {/* <a
               href="https://vinceskycam.com/360/gamuda_t12_vr/"
               target="_blank"
             >
               Virtual View
-            </a>
+            </a> */}
 
-            <NavLink to="#Layouts">Layout</NavLink>
+            <a href to="#Layouts">
+              Layout
+            </a>
 
             <a href="#RegisterForm">Register</a>
 
             <button
               className="button"
               onClick={() => (window.location.href = "https://wa.link/npzy6t")}
+              style={{ fontSize: "12px" }}
             >
-              Download e-Bouchre
+              Get Quote
             </button>
           </div>
         </OutsideClickHandler>

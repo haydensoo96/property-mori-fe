@@ -2,30 +2,24 @@ import React from "react";
 import "./MapComponent.css";
 const MapComponent = () => {
   return (
-    <div style={{ flex: 1, paddingLeft: "10%", paddingRight: "10%" }}>
+    <div className="flexColCenter">
       <div className="flexColCenter" style={{ flex: 0.5 }}>
         <span
-          className="primaryText paddings"
-          style={{ fontFamily: "fantasy", fontSize: "25px" }}
+          className="primaryText"
+          style={{ fontFamily: "Source Sans 3", fontSize: "40px" }}
         >
-          WE DISCOVER
-        </span>
-        <span className="secondaryText" style={{ textAlign: "center" }}>
-          Gamuda Cove is a 1,530-acre township set next to wetlands and forest
-          reserves in Southern Klang Valley. Within close proximity to Cyberjaya
-          and KLIA, it enjoys direct access from ELITE Highway and easy
-          accessibility from other major highways.
+          CONNECTIVITY
         </span>
       </div>
 
       <div
-        className="image-container"
+        className="image-container flexColCenter"
         style={{
-          width: "100%",
+          width: "60%",
           height: "100%",
         }}
       >
-        <img src="./northwoods_assets/township_map.png" alt="" />
+        <img src="./heritage_assets/connects.png" alt="" />
       </div>
     </div>
   );

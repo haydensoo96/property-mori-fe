@@ -51,7 +51,29 @@ const Contact = () => {
         {/* right side */}
         <div className="flexEnd c-right">
           <div className="image-container">
-            <img src="./northwoods_assets/img1-thumb.png" alt="" />
+            <img
+              style={{ width: "50%" }}
+              src="./heritage_assets/gallery1.jpg"
+              alt=""
+            />
+            <img
+              style={{ width: "50%" }}
+              className="inner-image"
+              src="./heritage_assets/gallery2.jpg"
+              alt=""
+            />
+            <img
+              style={{ width: "50%" }}
+              className="inner-image"
+              src="./heritage_assets/gallery3.jpg"
+              alt=""
+            />
+            <img
+              style={{ width: "50%" }}
+              className="inner-image"
+              src="./heritage_assets/gallery4.jpg"
+              alt=""
+            />
           </div>
         </div>
       </div>

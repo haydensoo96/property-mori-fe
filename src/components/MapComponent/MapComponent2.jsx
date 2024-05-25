@@ -2,30 +2,56 @@ import React from "react";
 import "./MapComponent.css";
 const MapComponent2 = () => {
   return (
-    <div style={{ flex: 1, paddingLeft: "10%", paddingRight: "10%" }}>
-      <div className="flexColCenter" style={{ flex: 0.5 }}>
-        <span
-          className="primaryText paddings"
-          style={{ fontFamily: "fantasy", fontSize: "25px" }}
-        >
-          OUR MASTER PLAN
+    <div
+      style={{
+        marginTop: "5%",
+        background: "linear-gradient(to bottom, transparent, var(--black))",
+      }}
+    >
+      <div className="flexColCenter innerWidth">
+        <span className="secondaryText" style={{ marginBottom: "-2%" }}>
+          OUR PLAN
         </span>
-        <span className="secondaryText" style={{ textAlign: "center" }}>
-          Gamuda Cove is a 1,530-acre township set next to wetlands and forest
-          reserves in Southern Klang Valley. Within close proximity to Cyberjaya
-          and KLIA, it enjoys direct access from ELITE Highway and easy
-          accessibility from other major highways.
+        <span className="primaryText paddings" style={{ fontSize: "40px" }}>
+          SITE PLAN & FACILITIES DECK
         </span>
       </div>
 
       <div
-        className="image-container"
         style={{
-          width: "100%",
-          height: "100%",
+          display: "flex",
+          flexDirection: "row",
+          paddingBottom: "5%",
         }}
       >
-        <img src="./northwoods_assets/masterplan.png" alt="" />
+        <img
+          style={{ width: "45%", height: "auto" }}
+          src="./heritage_assets/ground-floor.png"
+          alt=""
+        />
+        <img
+          style={{ width: "45%", height: "auto" }}
+          src="./heritage_assets/level-6.png"
+          alt=""
+        />
+        {/* <div className="flexColStart">
+          <span className="primaryText" style={{ fontWeight: "400" }}>
+            GROUND FLOOR <br />
+          </span>
+          <span className="primaryText" style={{ fontWeight: "300" }}>
+            SITE PLAN
+          </span>
+          <div>
+            <span className="legen-title">LEGEND</span>
+            <div className="legend-container">
+              <span className="legend-item">1. Entrance</span>
+              <span className="legend-item">1. Entrance</span>
+              <span className="legend-item">1. Entrance</span>
+              <span className="legend-item">1. Entrance</span>
+              <span className="legend-item">1. Entrance</span>
+            </div>
+          </div>
+        </div> */}
       </div>
     </div>
   );

@@ -1,5 +1,10 @@
 import React from "react";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
 import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
+import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 // Import Swiper styles
 import "swiper/css";
 import "./Layouts.css";
@@ -13,9 +18,36 @@ const Layouts = () => {
 
   const sampleData = [
     // { image: "./northwoods_assets/Layout_1.PNG", description: "A" },
-    { image: "./northwoods_assets/Layout_2.PNG", description: "B" },
-    { image: "./northwoods_assets/Layout_3.PNG", description: "C" },
-    { image: "./northwoods_assets/Layout_4.PNG", description: "D" },
+    {
+      image: "./heritage_assets/TypeA.jpg",
+      title: "B",
+      description: "3 bedroom & 2 bathroom",
+      sqft: "862 sq. ft.",
+    },
+    {
+      image: "./heritage_assets/TypeA1.jpg",
+      title: "A1",
+      description: "3 bedroom & 2 bathroom",
+      sqft: "862 sq. ft.",
+    },
+    {
+      image: "./heritage_assets/TypeA1T.jpg",
+      title: "A1T",
+      description: "3 bedroom & 2 bathroom",
+      sqft: "862 sq. ft.",
+    },
+    {
+      image: "./heritage_assets/TypeA2.jpg",
+      title: "A2",
+      description: "3 bedroom & 2 bathroom",
+      sqft: "862 sq. ft.",
+    },
+    {
+      image: "./heritage_assets/TypeAT.jpg",
+      title: "AT",
+      description: "3 bedroom & 2 bathroom",
+      sqft: "862 sq. ft.",
+    },
   ];
 
   if (isLoading) {
@@ -25,7 +57,7 @@ const Layouts = () => {
           height="80"
           width="80"
           radius={1}
-          color="#4066ff"
+          // color="#4066ff"
           aria-label="puff-loading"
         />
       </div>
@@ -36,19 +68,23 @@ const Layouts = () => {
     <div
       id="Layouts"
       style={{
-        backgroundColor: "var(--black)",
+        background: "linear-gradient(to top, transparent, var(--black))",
       }}
     >
-      <div className="white-gradient-bottom-right" />
       <div className="paddings">
         <div className="flexCenter r-head">
-          <span className="primaryText" style={{ color: "white" }}>
-            Our Layout
+          <span className="primaryText" style={{ fontSize: "40px" }}>
+            OUR LAYOUTS
           </span>
         </div>
         <div>
-          <Swiper {...sliderSettings}>
-            <SlideNextButton />
+          <Swiper
+            {...sliderSettings}
+            modules={[Navigation, Pagination, Scrollbar, A11y]}
+            pagination={{ clickable: true }}
+            onSlideChange={() => console.log("slide change")}
+            onSwiper={(swiper) => console.log(swiper)}
+          >
             {sampleData.slice(0, 8).map((card, i) => (
               <SwiperSlide key={i}>
                 <PropertyCard card={card} />
