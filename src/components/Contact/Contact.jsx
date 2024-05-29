@@ -30,7 +30,7 @@ const Contact = () => {
                   className="flexCenter button"
                   style={{ background: "var(--black)" }}
                   onClick={() =>
-                    (window.location.href = "https://wa.link/s1q0t7")
+                    (window.location.href = "https://wa.link/scgi22")
                   }
                 >
                   Chat now
