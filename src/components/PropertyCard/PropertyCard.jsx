@@ -5,7 +5,7 @@ import { truncate } from "lodash";
 const PropertyCard = ({ card }) => {
   return (
     <div className="flexColStart r-card" style={{ alignItems: "center" }}>
-      <img src={card.image} alt="home" />
+      <img src={card.image} alt="home" style={{ height: "400px" }} />
       <span className="primaryText" style={{ fontWeight: "300" }}>
         {truncate(card.title, { length: 100 })}
       </span>

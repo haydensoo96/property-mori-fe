@@ -15,11 +15,11 @@ const MapComponent = () => {
       <div
         className="image-container flexColCenter"
         style={{
-          width: "60%",
+          width: "80%",
           height: "100%",
         }}
       >
-        <img src="./heritage_assets/connects.png" alt="" />
+        <img src="./heritage_assets/connectivity.png" alt="" />
       </div>
     </div>
   );

@@ -18,34 +18,28 @@ const Layouts = () => {
 
   const sampleData = [
     {
-      image: "./heritage_assets/TypeA.jpg",
+      image: "./heritage_assets/TypeA.png",
+      title: "A",
+      description: "3 bedroom & 2 bathroom",
+      sqft: "820 sq. ft.",
+    },
+    {
+      image: "./heritage_assets/TypeB.png",
       title: "B",
       description: "3 bedroom & 2 bathroom",
-      sqft: "862 sq. ft.",
+      sqft: "820 sq. ft.",
     },
     {
-      image: "./heritage_assets/TypeA1.jpg",
-      title: "A1",
+      image: "./heritage_assets/TypeAG.png",
+      title: "AG",
       description: "3 bedroom & 2 bathroom",
-      sqft: "862 sq. ft.",
+      sqft: "1026 (Accessory Parcel 234 sq.ft)",
     },
     {
-      image: "./heritage_assets/TypeA1T.jpg",
-      title: "A1T",
+      image: "./heritage_assets/TypeBG.png",
+      title: "BG",
       description: "3 bedroom & 2 bathroom",
-      sqft: "862 sq. ft.",
-    },
-    {
-      image: "./heritage_assets/TypeA2.jpg",
-      title: "A2",
-      description: "3 bedroom & 2 bathroom",
-      sqft: "862 sq. ft.",
-    },
-    {
-      image: "./heritage_assets/TypeAT.jpg",
-      title: "AT",
-      description: "3 bedroom & 2 bathroom",
-      sqft: "862 sq. ft.",
+      sqft: "1026 (Accessory Parcel 234 sq.ft)",
     },
   ];
 

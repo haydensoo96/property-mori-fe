@@ -49,13 +49,13 @@ const RegisterForm = () => {
     <div className="c-wrapper" id="RegisterForm" style={{ marginTop: "5%" }}>
       <div className="flexCenter c-container innerWidth">
         <div className="flexStart">
-          <div>
-            <img src="./heritage_assets/concept2.jpeg" alt="" />
+          <div className="image-container">
+            <img src="./heritage_assets/concept3.png" alt="" />
           </div>
         </div>
         <div className="flex c-right">
           {!formSubmitted ? (
-            <div className="flexColStart">
+            <div className="flexColStart" style={{ padding: "11%" }}>
               <span className="primaryText">Register You Interest</span>
               <span className="secondaryText">
                 Subscribe and find super attractive price quotes from us.

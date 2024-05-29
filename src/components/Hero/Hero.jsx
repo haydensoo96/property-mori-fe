@@ -12,15 +12,15 @@ const Hero = () => {
             style={{
               textAlign: "center",
               position: "absolute",
-              bottom: "25%",
-              left: "26%",
+              bottom: "20%",
+              left: "31%",
             }}
           >
             <span
               className="primaryText"
               style={{ color: "white", fontSize: "80px", fontWeight: "400" }}
             >
-              "Make living grand again"
+              "A Timeless Tribute"
             </span>
           </div>
           <div>

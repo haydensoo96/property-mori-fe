@@ -30,7 +30,7 @@ const Contact = () => {
                   className="flexCenter button"
                   style={{ background: "var(--black)" }}
                   onClick={() =>
-                    (window.location.href = "https://wa.link/scgi22")
+                    window.open("https://wa.link/jknxx5", "_blank")
                   }
                 >
                   Chat now
@@ -60,19 +60,19 @@ const Contact = () => {
             <img
               style={{ width: "50%" }}
               className="inner-image"
-              src="./heritage_assets/gallery2.jpg"
-              alt=""
-            />
-            <img
-              style={{ width: "50%" }}
-              className="inner-image"
               src="./heritage_assets/gallery3.jpg"
               alt=""
             />
             <img
               style={{ width: "50%" }}
               className="inner-image"
-              src="./heritage_assets/gallery4.jpg"
+              src="./heritage_assets/showroom1.jpeg"
+              alt=""
+            />
+            <img
+              style={{ width: "50%" }}
+              className="inner-image"
+              src="./heritage_assets/showroom2.jpeg"
               alt=""
             />
           </div>
