@@ -14,6 +14,7 @@ import UserDetailContext from "./context/UserDetailContext";
 import Bookings from "./pages/Bookings/Bookings";
 import Favourites from "./pages/Favourites/Favourites";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
+import HelmetHeader from "./Helmet";
 
 function App() {
   const queryClient = new QueryClient();
@@ -26,6 +27,7 @@ function App() {
 
   return (
     <UserDetailContext.Provider value={{ userDetails, setUserDetails }}>
+      <HelmetHeader />
       <QueryClientProvider client={queryClient}>
         <BrowserRouter>
           <Suspense fallback={<div>Loading...</div>}>
