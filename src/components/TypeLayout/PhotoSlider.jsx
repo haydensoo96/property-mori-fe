@@ -1,33 +1,59 @@
 import React from "react";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
 import { useSwiper } from "swiper/react";
 import "swiper/css";
-import "./PhotoSliders.css";
-import { PuffLoader } from "react-spinners";
+import "./Layouts.css";
 
-const PhotoSliders = () => {
+const Layouts = () => {
+  const images = [
+    {
+      image: "./mori3assets/discover-your-mori-way-1.png",
+    },
+    {
+      image: "./mori3assets/discover-your-mori-way-2.png",
+    },
+    {
+      image: "./mori3assets/discover-your-mori-way-3.png",
+    },
+  ];
+
   return (
-    <div id="PhotoSliders" className="innerWidth">
-      <div className="white-gradient-bottom-right" />
-      <div className="flexColCenter r-head">
-        <span className="secondaryText">FEATURE & AMMENTIES</span>
-        <span
-          className="primaryText"
-          style={{ fontSize: "45px", textAlign: "center", marginBottom: "5%" }}
-        >
-          Majestic features with bespoke <br /> appointments
-        </span>
-        <div className="image-row-container">
-          <img src="./heritage_assets/fac1.jpeg" alt="" />
-          <img src="./heritage_assets/fac2.jpeg" alt="" />
-          <img src="./heritage_assets/fac3.jpeg" alt="" />
-          <img src="./heritage_assets/fac4.jpeg" alt="" />
+    <div
+      id="Layouts"
+      style={{
+        background: "var(--diff-background))",
+      }}
+    >
+      <div className="paddings">
+        <div className="flexCenter r-head">
+          <span
+            className="primaryText"
+            style={{ fontSize: "50px", fontWeight: "200" }}
+          >
+            "DISCOVER YOUR MORI WAY OF LIVING"
+          </span>
+        </div>
+
+        <div className="image-gallery">
+          {images.map((img, index) => (
+            <div key={index} className="image-container">
+              <img
+                src={img.image}
+                alt={`Image ${index + 1}`}
+                className="original-size-image"
+              />
+            </div>
+          ))}
         </div>
       </div>
     </div>
   );
 };
 
-export default PhotoSliders;
+export default Layouts;
 
 const SlideNextButton = () => {
   const swiper = useSwiper();

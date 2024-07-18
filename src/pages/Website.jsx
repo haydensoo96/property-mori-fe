@@ -41,18 +41,18 @@ const Website = () => {
       <div>
         <Hero />
       </div>
-      <PhotoSliders />
+      {/* <PhotoSliders /> */}
 
       <ConceptKey />
 
       <Contact />
 
       <Layouts />
-      <MapComponent />
+      {/* <MapComponent /> */}
 
       <RegisterForm />
 
-      <MapComponent2
+      {/* <MapComponent2
         legend={legend}
         image={"./heritage_assets/ground-floor.png"}
         title={groundFloorTitle}
@@ -66,7 +66,7 @@ const Website = () => {
         title={level6title}
         type={2}
         background
-      />
+      /> */}
     </div>
   );
 };

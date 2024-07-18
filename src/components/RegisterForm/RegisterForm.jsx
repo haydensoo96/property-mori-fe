@@ -7,7 +7,7 @@ const RegisterForm = () => {
     name: "",
     phone: "",
     email: "",
-    project: "Heritage",
+    project: "Mori3",
   });
 
   const [formSubmitted, setFormSubmitStatus] = useState(false);
@@ -46,11 +46,15 @@ const RegisterForm = () => {
   };
 
   return (
-    <div className="c-wrapper" id="RegisterForm" style={{ marginTop: "5%" }}>
+    <div
+      className="c-wrapper"
+      id="RegisterForm"
+      style={{ marginTop: "5%", background: "var(--diff-background)" }}
+    >
       <div className="flexCenter c-container innerWidth">
         <div className="flexStart">
           <div className="image-container">
-            <img src="./heritage_assets/concept3.png" alt="" />
+            <img src="./mori3assets/discover-your-mori-way-3.png" alt="" />
           </div>
         </div>
         <div className="flex c-right">

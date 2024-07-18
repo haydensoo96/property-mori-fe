@@ -6,36 +6,18 @@ const ConceptKey = () => {
   return (
     <div
       style={{
-        background: "linear-gradient(to bottom, transparent, var(--black))",
+        background: "var(--diff-background))",
       }}
     >
       <div
-        className="innerWidth"
         style={{
           flexDirection: "row",
           display: "flex",
-          justifyContent: "space-between",
         }}
       >
-        <div className="flexColStart c-left">
-          <motion.h1
-            initial={{ y: "2rem", opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{
-              duration: 2,
-              type: "ease-in",
-            }}
-          >
-            <img
-              src="./heritage_assets/concept1.jpeg"
-              alt=""
-              className="image-container"
-            />
-          </motion.h1>
-        </div>
         <div
-          className="flexColCenter c-right textFormat"
-          style={{ padding: "10%" }}
+          className="flexColCenter c-left"
+          style={{ textAlign: "right", flex: 1.5 }}
         >
           <motion.h1
             initial={{ y: "2rem", opacity: 0 }}
@@ -45,15 +27,37 @@ const ConceptKey = () => {
               type: "ease-in",
             }}
           >
-            <span className="primaryText" style={{ fontSize: "45px" }}>
-              A modern interpretation  <br /> of colonial cool <br />
+            <span
+              className="primaryText"
+              style={{ fontSize: "60px", fontWeight: "300" }}
+            >
+              ABOUT <br />
             </span>
-            <span className="orangeText" style={{ fontSize: "15px" }}>
-              While the colonial features and designs are delivered in stunning
-              details, what makes Tuan 2egacy truly special is how these classic
-              elements blend seamlessly with contemporary interpretations of
-              design – suited to the new generation of home buyers.
+            <span
+              className="orangeText"
+              style={{ fontSize: "20px", fontWeight: "200" }}
+            >
+              The MORI essence embodies a lasting, sustainable urban living,
+              with space crafter for generations <br /> <br />
+              Residents blend their routines seamlessly with the MORI way of
+              life.
             </span>
+          </motion.h1>
+        </div>
+        <div className="flexColEnd c-right" style={{ flex: 1 }}>
+          <motion.h1
+            initial={{ y: "2rem", opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{
+              duration: 2,
+              type: "ease-in",
+            }}
+          >
+            <img
+              src="./mori3assets/mori-city-rounded.png"
+              alt=""
+              className="image-container"
+            />
           </motion.h1>
         </div>
       </div>

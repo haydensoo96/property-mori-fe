@@ -3,10 +3,20 @@ import "./Contact.css";
 import { BsWhatsapp } from "react-icons/bs";
 const Contact = () => {
   return (
-    <div id="contact-us" className="c-wrapper">
+    <div
+      id="contact-us"
+      className="c-wrapper"
+      style={{ background: "var(--diff-background)" }}
+    >
       <div className="paddings innerWidth flexCenter c-container">
         {/* left side */}
-        <div className="flexColStart c-left">
+        <div className="flexEnd c-left">
+          <div className="image-container">
+            <img src="./mori3assets/discover-your-mori-way-1.png" alt="" />
+            <img src="./mori3assets/discover-your-mori-way-2.png" alt="" />
+          </div>
+        </div>
+        <div className="flexColStart c-right" style={{ marginLeft: "5%" }}>
           <span className="orangeText">Our Contact Us</span>
           <span className="primaryText">Book a time to our showroom</span>
           <span className="secondaryText">
@@ -30,7 +40,7 @@ const Contact = () => {
                   className="flexCenter button"
                   style={{ background: "var(--black)" }}
                   onClick={() =>
-                    window.open("https://wa.link/jknxx5", "_blank")
+                    window.open("https://wa.link/rbt261", "_blank")
                   }
                 >
                   Chat now
@@ -46,35 +56,6 @@ const Contact = () => {
                 </span>
               </div>
             </div>
-          </div>
-        </div>
-
-        {/* right side */}
-        <div className="flexEnd c-right">
-          <div className="image-container">
-            <img
-              style={{ width: "50%" }}
-              src="./heritage_assets/gallery1.jpg"
-              alt=""
-            />
-            <img
-              style={{ width: "50%" }}
-              className="inner-image"
-              src="./heritage_assets/gallery3.jpg"
-              alt=""
-            />
-            <img
-              style={{ width: "50%" }}
-              className="inner-image"
-              src="./heritage_assets/showroom1.jpeg"
-              alt=""
-            />
-            <img
-              style={{ width: "50%" }}
-              className="inner-image"
-              src="./heritage_assets/showroom2.jpeg"
-              alt=""
-            />
           </div>
         </div>
       </div>

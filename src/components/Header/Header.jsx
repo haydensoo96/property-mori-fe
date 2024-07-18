@@ -15,11 +15,7 @@ const Header = () => {
       <div className="flexCenter innerWidth paddings h-container">
         {/* logo */}
         <Link to="/">
-          <img
-            src="./heritage_assets/heritage-logo.png"
-            alt="logo"
-            width={150}
-          />
+          <img src="./mori3assets/logo.png" alt="logo" width={300} />
         </Link>
 
         {/* menu */}
@@ -46,15 +42,13 @@ const Header = () => {
 
             <button
               className="button"
-              onClick={() => window.open("https://wa.link/yz9y03", "_blank")}
+              onClick={() => window.open("https://wa.link/9ylq6d", "_blank")}
               style={{ fontSize: "15px", fontWeight: "300" }}
             >
               Get Quote
             </button>
           </div>
         </OutsideClickHandler>
-
-        {/* for medium and small screens */}
         <div
           className="menu-icon"
           onClick={() => setMenuOpened((prev) => !prev)}

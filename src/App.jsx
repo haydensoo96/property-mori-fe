@@ -20,7 +20,7 @@ function App() {
         <BrowserRouter>
           <Suspense fallback={<div>Loading...</div>}>
             <FloatingWhatsApp
-              onClick={() => window.open("https://wa.link/yz9y03", "_blank")}
+              onClick={() => window.open("https://wa.link/fsnbhj", "_blank")}
             ></FloatingWhatsApp>
             <Routes>
               <Route element={<Layout />}>

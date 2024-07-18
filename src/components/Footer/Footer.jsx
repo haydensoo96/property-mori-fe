@@ -6,12 +6,12 @@ const Footer = () => {
       <div className="paddings innerWidth flexCenter f-container">
         {/* left side */}
         <div className="flexColStart f-left">
-          <img src="./heritage_assets/heritage-logo.png" alt="" width={150} />
+          <img src="./mori3assets/logo.png" alt="" width={250} />
         </div>
 
-        <div className="flexColStart f-right" style={{ marginLeft: "10%" }}>
-          <img src="./heritage_assets/cpi-logo.png" alt="" width={150} />
-        </div>
+        {/* <div className="flexColStart f-right" style={{ marginLeft: "10%" }}>
+          <img src="./mori3assets/logo.png" alt="" width={250} />
+        </div> */}
       </div>
     </div>
   );

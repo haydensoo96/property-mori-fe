@@ -1,12 +1,11 @@
 import React from "react";
 import "./PropertyCard.css";
-import { truncate } from "lodash";
 
 const PropertyCard = ({ card }) => {
   return (
     <div className="flexColStart r-card" style={{ alignItems: "center" }}>
-      <img src={card.image} alt="home" style={{ height: "400px" }} />
-      <span className="primaryText" style={{ fontWeight: "300" }}>
+      <img src={card.image} style={{ width: "600px" }} alt="home" />
+      {/* <span className="primaryText" style={{ fontWeight: "300" }}>
         {truncate(card.title, { length: 100 })}
       </span>
       <span className="secondaryText" style={{ fontWeight: "300" }}>
@@ -17,7 +16,7 @@ const PropertyCard = ({ card }) => {
         style={{ fontWeight: "300", fontSize: "20px" }}
       >
         {truncate(card.sqft, { length: 100 })}
-      </span>
+      </span> */}
     </div>
   );
 };

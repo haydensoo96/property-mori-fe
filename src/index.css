@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
 
 :root {
-  --primary: #a4a88d;
+  --primary: #727171;
   --secondary: rgba(9, 8, 8, 0.78);
-  --black: #c0b6ae;
+  --black: #ffffff;
+  --diff-background: #d0d0d046;
   --blue-gradient: linear-gradient(97.05deg, #98a25a 3.76%, #a1a17e 100%);
   --orange-gradient: linear-gradient(270deg, #ffb978 0%, #ff922d 100%);
   --blue: #231F20;

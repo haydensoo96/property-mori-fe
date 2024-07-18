@@ -5,18 +5,20 @@ const HelmetHeader = () => {
   return (
     <HelmetProvider>
       <Helmet>
-        <title>Tuan 3 Heritage</title>
+        <title>Mori 3 Residence</title>
         <meta
-          name="Tuan 3 Heritage "
-          content="Introducing Tuan Heritag3, the third chapter in the esteemed Tuan Series, where classic elegance meets contemporary urban living. Rising majestically at 45-storey along Jalan Segambut, this residential masterpiece seamlessly integrates colonial charm with the allure of a retro train station, offering residents a truly unique and sophisticated lifestyle."
+          name="Mori 3 Residence "
+          content="The Way of Mori Residences is a New Class of Condo that refines the way in designing living spaces, by rethinking the essentials in product creation and value innovation.
+The sincerity of Mori is to pursue an endless effort in building quality and sustainable homeownership experience that
+grows beyond the walls, beyond the time.."
         />
         <meta
           name="keywords"
-          content="Tuan 3, Jalan Ipoh Condo, Mont Kiara Freehold, Freehold under RM500k"
+          content="mori 3, rawang freehold, rawang condo under 400k, mori residence, anggung city condo"
         />
-        <meta name="author" content="Your Name" />
-        <meta property="og:title" content="My Awesome App" />
-        <meta property="og:description" content="Live the British" />
+        <meta name="author" content="Scientex" />
+        <meta property="og:title" content="Scientex" />
+        <meta property="og:description" content="Freehold Condo" />
       </Helmet>
     </HelmetProvider>
   );
