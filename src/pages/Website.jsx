@@ -1,13 +1,13 @@
 import React from "react";
 import Contact from "../components/Contact/Contact";
 import Hero from "../components/Hero/Hero";
-import Layouts from "../components/Layouts/Layouts";
+import Layouts from "../components/TypeLayout/TypeLayouts";
 import RegisterForm from "../components/RegisterForm/RegisterForm";
 import ConceptCard from "../components/ConceptCard/ConceptCard";
-import MapComponent from "../components/MapComponent/MapComponent";
+import MapComponent from "../components/MapComponent/MasterMap";
 import ConceptKey from "../components/ConceptCard/ConceptKey";
-import MapComponent2 from "../components/MapComponent/MapComponent2";
-import PhotoSliders from "../components/Layouts/PhotoSlider";
+import MapComponent2 from "../components/MapComponent/SiteMapPlan";
+import PhotoSliders from "../components/TypeLayout/PhotoSlider";
 
 const Website = () => {
   const legend = [
@@ -45,11 +45,8 @@ const Website = () => {
 
       <ConceptKey />
 
-      {/* <ConceptElement /> */}
-      <div>
-        <div className="white-gradient" />
-        <Contact />
-      </div>
+      <Contact />
+
       <Layouts />
       <MapComponent />
 

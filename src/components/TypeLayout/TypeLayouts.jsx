@@ -10,12 +10,9 @@ import "swiper/css";
 import "./Layouts.css";
 import { sliderSettings } from "../../utils/common";
 import PropertyCard from "../PropertyCard/PropertyCard";
-import useProperties from "../../hooks/useProperties";
 import { PuffLoader } from "react-spinners";
 
 const Layouts = () => {
-  const { isLoading } = useProperties();
-
   const sampleData = [
     {
       image: "./heritage_assets/TypeA.png",
@@ -43,20 +40,6 @@ const Layouts = () => {
     },
   ];
 
-  if (isLoading) {
-    return (
-      <div className="wrapper flexCenter" style={{ height: "60vh" }}>
-        <PuffLoader
-          height="80"
-          width="80"
-          radius={1}
-          // color="#4066ff"
-          aria-label="puff-loading"
-        />
-      </div>
-    );
-  }
-
   return (
     <div
       id="Layouts"
@@ -75,8 +58,6 @@ const Layouts = () => {
             {...sliderSettings}
             modules={[Navigation, Pagination, Scrollbar, A11y]}
             pagination={{ clickable: true }}
-            onSlideChange={() => console.log("slide change")}
-            onSwiper={(swiper) => console.log(swiper)}
           >
             {sampleData.slice(0, 8).map((card, i) => (
               <SwiperSlide key={i}>
@@ -91,17 +72,3 @@ const Layouts = () => {
 };
 
 export default Layouts;
-
-const SlideNextButton = () => {
-  const swiper = useSwiper();
-  return (
-    <div className="flexCenter r-buttons">
-      <button onClick={() => swiper.slidePrev()} className="r-prevButton">
-        &lt;
-      </button>
-      <button onClick={() => swiper.slideNext()} className="r-nextButton">
-        &gt;
-      </button>
-    </div>
-  );
-};

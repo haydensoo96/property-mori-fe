@@ -1,6 +1,6 @@
 import React from "react";
 import "./Contact.css";
-import { BsFillChatDotsFill, BsWhatsapp } from "react-icons/bs";
+import { BsWhatsapp } from "react-icons/bs";
 const Contact = () => {
   return (
     <div id="contact-us" className="c-wrapper">
